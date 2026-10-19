@@ -1,0 +1,13 @@
+{
+ "vessels":[{"id":"V001","name":"MV Ocean Star","imo":"9876543","type":"Container ship"},
+            {"id":"V002","name":"MV Blue Horizon","imo":"9123456","type":"Bulk carrier"}],
+ "ports":[{"id":"P001","name":"Port of Singapore","congestion":"Low","avg_wait_hours":6,"vessels_at_anchor":4,"recorded_at":"2026-09-20","source":"Port Authority feed"},
+          {"id":"P002","name":"Port of Rotterdam","congestion":"High","avg_wait_hours":38,"vessels_at_anchor":27,"recorded_at":"2026-10-12","source":"Port Authority feed"},
+          {"id":"P003","name":"Port of Hamburg","congestion":"Moderate","avg_wait_hours":14,"vessels_at_anchor":9,"recorded_at":"2026-10-12","source":"Port Authority feed"}],
+ "voyages":[{"id":"VG-1042","vessel":"V001","origin":"P001","destination":"P002","departed":"2026-09-20","original_eta":"2026-10-11","revised_eta":"2026-10-13T18:00","status":"Delayed","recorded_delay_hours":54},
+            {"id":"VG-2001","vessel":"V002","origin":"P001","destination":"P003","departed":"2026-09-25","original_eta":"2026-10-15","revised_eta":"2026-10-15","status":"On schedule","recorded_delay_hours":0}],
+ "incidents":[{"id":"INC-201","voyage":"VG-1042","type":"Engine cooling fault","status":"Confirmed","severity":"Medium","reported":"2026-10-03","source":"Master's report","attributed_delay_hours":12},
+              {"id":"INC-202","voyage":"VG-1042","type":"Adverse weather / rerouting","status":"Reported","severity":"Unknown","reported":"2026-10-05","source":"Crew message (unverified)","attributed_delay_hours":null},
+              {"id":"INC-203","voyage":"VG-1042","type":"Customs documentation query","status":"Under review","severity":"Low","reported":"2026-10-12","source":"Agent email","attributed_delay_hours":null},
+              {"id":"INC-300","voyage":"VG-2001","type":"Crew change delay","status":"Confirmed","severity":"Low","reported":"2026-10-01","source":"Port agent","attributed_delay_hours":2}]
+}
