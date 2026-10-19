@@ -1,5 +1,7 @@
 # Voyage Delay Investigator
 
+![UI screenshot](Screenshot 2026-10-19 105104.png)
+
 Built for the SolversMind assignment. The question it answers:
 **"Why is MV Ocean Star delayed, and what should the operations team check next?"**
 
